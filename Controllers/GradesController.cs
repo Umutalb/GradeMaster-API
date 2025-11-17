@@ -22,7 +22,7 @@ namespace GradeMaster_API.Controllers
             {
                 response.Status = true;
                 response.Average = newAverage;
-                response.Comment = "Dersi geçtiniz.";
+                response.Comment = "You passed the course. Congratulations.";
                 response.RequiredFinal = 0;
             }
                 
@@ -35,7 +35,7 @@ namespace GradeMaster_API.Controllers
                 response.RequiredFinal = Math.Round(
                     (newGrade.PassingGrade - newGrade.Midterm * newGrade.MidtermWeight) / newGrade.FinalWeight, 2);
 
-                response.Comment = $"Dersten kaldınız. Finalden {response.RequiredFinal} notunu almanız gerekirdi.";              
+                response.Comment = $"You failed the course. You needed to score {response.RequiredFinal} on the final exam.";              
             }
 
             return Ok(response);
