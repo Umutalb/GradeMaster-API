@@ -15,6 +15,6 @@ This API is used by the GradeMaster frontend application.
 
 ## How to Use
 
-1.Open the project in Visual Studio 2026.
-2.Run the API with .NET 10 (HTTPS enabled).
-3.Use any client or the frontend to make requests to the /api/grades endpoint.
+1. Open the project in Visual Studio 2026.
+2. Run the API with .NET 10 (HTTPS enabled).
+3. Use any client or the frontend to make requests to the /api/grades endpoint.
